@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyCCU Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="logo">My<span class="logo-accent">CCU</span></a>
+      <div class="nav-links">
+        <a href="#games" class="nav-link">Games</a>
+        <a href="#what-we-do" class="nav-link">What we do</a>
+        <a href="#why-us" class="nav-link">Why us</a>
+        <a href="https://discord.gg/myccu" target="_blank" rel="noopener noreferrer" class="nav-link">Discord</a>
+        <a href="https://x.com/myccu" target="_blank" rel="noopener noreferrer" class="nav-link">X</a>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg-particles" id="particles"></div>
+      <div class="hero-content">
+        <p class="hero-label">My<span class="hero-label-accent">CCU</span></p>
+        <h1 class="hero-title">
+          We build games that<br />
+          <span class="hero-title-accent">actually hit</span>
+        </h1>
+        <p class="hero-desc">
+          A studio. Not templates. We code, we design, we ship. Roblox games are what we do, and we do them better than most.
+        </p>
+        <div class="hero-btns">
+          <a href="https://discord.gg/myccu" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Join Discord</a>
+          <a href="#games" class="btn btn-outline">Our Games</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <section class="stats" id="stats">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-number" data-target="0">0</span>
+          <span class="stat-label">CCU</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="0">0</span>
+          <span class="stat-label">Visits</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="0">0</span>
+          <span class="stat-label">Games</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="games" id="games">
+      <div class="section-container">
+        <p class="section-label">Portfolio</p>
+        <h2 class="section-title">Our Games</h2>
+        <p class="section-desc">The experiences we are building right now.</p>
+        <div class="games-grid">
+          <div class="game-card">
+            <div class="game-image">
+              <div class="game-image-placeholder">
+                <span class="game-image-text">?</span>
+              </div>
+              <div class="game-badge">
+                <span class="game-badge-dot"></span>
+                <span class="game-badge-text">0 playing</span>
+              </div>
+            </div>
+            <div class="game-info">
+              <div class="game-header">
+                <div class="game-icon">
+                  <span>?</span>
+                </div>
+                <div class="game-header-info">
+                  <h3 class="game-name">Releasing Soon</h3>
+                  <p class="game-creator">by MyCCU Studio</p>
+                </div>
+              </div>
+              <div class="game-stats">
+                <div class="game-stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                  <span>0 visits</span>
+                </div>
+                <div class="game-stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                  </svg>
+                  <span>0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="game-card">
+            <div class="game-image">
+              <div class="game-image-placeholder">
+                <span class="game-image-text">?</span>
+              </div>
+              <div class="game-badge">
+                <span class="game-badge-dot"></span>
+                <span class="game-badge-text">0 playing</span>
+              </div>
+            </div>
+            <div class="game-info">
+              <div class="game-header">
+                <div class="game-icon">
+                  <span>?</span>
+                </div>
+                <div class="game-header-info">
+                  <h3 class="game-name">Releasing Soon</h3>
+                  <p class="game-creator">by MyCCU Studio</p>
+                </div>
+              </div>
+              <div class="game-stats">
+                <div class="game-stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                  <span>0 visits</span>
+                </div>
+                <div class="game-stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                  </svg>
+                  <span>0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="game-card">
+            <div class="game-image">
+              <div class="game-image-placeholder">
+                <span class="game-image-text">?</span>
+              </div>
+              <div class="game-badge">
+                <span class="game-badge-dot"></span>
+                <span class="game-badge-text">0 playing</span>
+              </div>
+            </div>
+            <div class="game-info">
+              <div class="game-header">
+                <div class="game-icon">
+                  <span>?</span>
+                </div>
+                <div class="game-header-info">
+                  <h3 class="game-name">Releasing Soon</h3>
+                  <p class="game-creator">by MyCCU Studio</p>
+                </div>
+              </div>
+              <div class="game-stats">
+                <div class="game-stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                  <span>0 visits</span>
+                </div>
+                <div class="game-stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                  </svg>
+                  <span>0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="what-we-do">
+      <div class="section-container">
+        <h2 class="section-title">What We Do</h2>
+        <div class="cards-grid">
+          <div class="card feature-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="card-title">We Build</h3>
+            <p class="card-text">Roblox games from scratch. No recycled garbage. Every project is built custom, optimized for players, and designed to scale. We code tight and ship fast.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"/>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <h3 class="card-title">We Invest</h3>
+            <p class="card-text">We put money into games that deserve it. Not hype. We look at mechanics, retention, and actual potential. If it is solid, we back it.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6l-3-4z"/>
+                <line x1="3" y1="6" x2="21" y2="6"/>
+                <path d="M16 10a4 4 0 1 1-8 0"/>
+              </svg>
+            </div>
+            <h3 class="card-title">We Buy</h3>
+            <p class="card-text">If a game is worth owning, we buy it. Then we scale it, fix what is broken, and push it to the next level. That is the play.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="why-us">
+      <div class="section-container">
+        <h2 class="section-title">Built Different</h2>
+        <div class="team-cards">
+          <div class="card team-card">
+            <div class="team-card-header">
+              <div class="team-avatar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
+                </svg>
+              </div>
+              <div class="team-card-info">
+                <h3 class="team-name">Ship or Die</h3>
+                <p class="team-role">No cap</p>
+              </div>
+            </div>
+            <p class="card-text">Talk is cheap. We build, test, ship. Deadlines are not suggestions and we do not miss them. If it is not live, it does not count. Simple as that.</p>
+          </div>
+          <div class="card team-card">
+            <div class="team-card-header">
+              <div class="team-avatar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div class="team-card-info">
+                <h3 class="team-name">Tuff Code</h3>
+                <p class="team-role">Bulletproof</p>
+              </div>
+            </div>
+            <p class="card-text">Our stuff does not break. Thousands of players, heavy economy, complex physics — all handled. No lag. No crashes. No excuses. It just works.</p>
+          </div>
+          <div class="card team-card">
+            <div class="team-card-header">
+              <div class="team-avatar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div class="team-card-info">
+                <h3 class="team-name">We Grind</h3>
+                <p class="team-role">All day</p>
+              </div>
+            </div>
+            <p class="card-text">No one here clocks out at 5. We iterate, optimize, fix what others ignore. That is why our games hit harder than the rest. It is not luck.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-content">
+        <h2 class="cta-title">Got a game? Let us talk.</h2>
+        <p class="cta-desc">Build, invest, or sell — we are open. Hit us up.</p>
+        <div class="cta-btns">
+          <a href="https://discord.gg/myccu" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Join Discord</a>
+          <a href="https://x.com/myccu" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">Contact</a>
+        </div>
+      </div>
+      <div class="cta-glow"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="/" class="logo">My<span class="logo-accent">CCU</span></a>
+        <p class="footer-tagline">A studio. Not templates. MyCCU.xyz</p>
+      </div>
+      <div class="footer-links">
+        <a href="#games">Games</a>
+        <a href="#what-we-do">What we do</a>
+        <a href="#why-us">Why us</a>
+        <a href="https://discord.gg/myccu" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a href="https://x.com/myccu" target="_blank" rel="noopener noreferrer">X</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>MyCCU Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
