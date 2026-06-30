@@ -1,5 +1,3 @@
-import './style.css'
-
 const initParticles = () => {
   const container = document.getElementById('particles')
   if (!container) return
