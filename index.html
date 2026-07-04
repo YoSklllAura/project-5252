@@ -13,7 +13,7 @@
   <nav class="navbar">
     <div class="nav-container">
       <a href="/" class="logo">
-        <img src="/image.png" alt="MyCCU" class="logo-img" />
+        <img src="/image copy copy copy.png" alt="MyCCU" class="logo-img" />
       </a>
       <div class="nav-links">
         <a href="#games" class="nav-link">Games</a>
@@ -33,48 +33,60 @@
   <main>
     <section class="hero">
       <div class="hero-bg-particles" id="particles"></div>
+
+      <!-- Full-width rising chart behind everything -->
+      <div class="hero-chart-bg" aria-hidden="true">
+        <svg class="hero-chart-svg" viewBox="0 0 1200 480" fill="none" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="chartLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#1a3aff" stop-opacity="0.7"/>
+              <stop offset="100%" stop-color="#2563ff" stop-opacity="1"/>
+            </linearGradient>
+            <filter id="chartGlow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="10" result="blur"/>
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+            <filter id="arrowGlow" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="14" result="blur"/>
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+          <!-- Main zigzag stock line -->
+          <polyline
+            class="chart-main-line"
+            points="0,440 180,370 340,410 500,270 660,310 820,180 980,220 1100,90 1160,50"
+            stroke="url(#chartLineGrad)"
+            stroke-width="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            fill="none"
+            filter="url(#chartGlow)"
+          />
+          <!-- Arrowhead at top right -->
+          <polygon
+            class="chart-main-arrowhead"
+            points="1160,50 1118,74 1136,96"
+            fill="#2563ff"
+            filter="url(#arrowGlow)"
+          />
+        </svg>
+      </div>
+
       <div class="hero-content">
         <div class="hero-logo-wrap">
-          <img src="/image.png" alt="MyCCU" class="hero-logo-img" />
+          <img src="/image copy copy copy.png" alt="MyCCU" class="hero-logo-img" />
         </div>
         <h1 class="hero-title">
           We build games that<br />
-          <span class="hero-title-accent-wrap">
-            <span class="hero-title-accent">actually hit</span>
-            <span class="chart-arrow" aria-hidden="true">
-              <svg viewBox="0 0 420 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="chart-svg">
-                <defs>
-                  <linearGradient id="chartGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stop-color="#0B4FFF" stop-opacity="0.6"/>
-                    <stop offset="100%" stop-color="#0B4FFF" stop-opacity="1"/>
-                  </linearGradient>
-                  <filter id="glow">
-                    <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-                    <feMerge>
-                      <feMergeNode in="coloredBlur"/>
-                      <feMergeNode in="SourceGraphic"/>
-                    </feMerge>
-                  </filter>
-                </defs>
-                <polyline
-                  class="chart-line"
-                  points="0,180 80,140 150,160 230,80 310,100 380,30"
-                  stroke="url(#chartGrad)"
-                  stroke-width="5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  fill="none"
-                  filter="url(#glow)"
-                />
-                <polygon
-                  class="chart-arrowhead"
-                  points="380,30 355,42 370,55"
-                  fill="#0B4FFF"
-                  filter="url(#glow)"
-                />
-              </svg>
-            </span>
-          </span>
+          <span class="hero-title-accent">actually hit</span>
         </h1>
         <p class="hero-desc">
           A studio. Not templates. We code, we design, we ship. Roblox games are what we do, and we do them better than most.
@@ -322,7 +334,7 @@
     <div class="footer-content">
       <div class="footer-brand">
         <a href="/" class="logo footer-logo-img-wrap">
-          <img src="/image.png" alt="MyCCU" class="footer-logo-img" />
+          <img src="/image copy copy copy.png" alt="MyCCU" class="footer-logo-img" />
         </a>
         <p class="footer-tagline">A studio. Not templates. MyCCU.xyz</p>
       </div>
