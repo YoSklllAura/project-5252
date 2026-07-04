@@ -263,7 +263,8 @@ body {
 
 .chart-main-arrowhead {
   opacity: 0;
-  animation: fadeIn 0.5s ease 2.4s forwards;
+  transform-origin: 1160px 50px;
+  animation: fadeIn 0.5s ease 2.4s forwards, arrowPulse 2.4s ease-in-out 2.9s infinite;
 }
 
 .hero-desc {
@@ -397,6 +398,51 @@ body {
   background: #000000;
 }
 
+.growth-chart {
+  max-width: 420px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.growth-chart-svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  filter: drop-shadow(0 0 10px rgba(11, 79, 255, 0.35));
+}
+
+.growth-chart-line {
+  stroke-dasharray: 520;
+  stroke-dashoffset: 520;
+}
+
+.growth-chart-arrow {
+  opacity: 0;
+}
+
+.growth-chart.visible .growth-chart-line {
+  animation: drawChartMain 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s forwards;
+}
+
+.growth-chart.visible .growth-chart-arrow {
+  animation: fadeIn 0.4s ease 1.3s forwards;
+}
+
+.growth-chart-label {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #0B4FFF;
+  opacity: 0;
+}
+
+.growth-chart.visible .growth-chart-label {
+  animation: fadeIn 0.6s ease 1.5s forwards;
+}
+
 .stats-grid {
   max-width: 900px;
   margin: 0 auto;
@@ -412,6 +458,9 @@ body {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.06);
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.35s ease, background 0.35s ease, box-shadow 0.35s ease;
+}
+
+.js .stat-card {
   opacity: 0;
   transform: translateY(24px);
 }
@@ -492,11 +541,14 @@ body {
   text-align: center;
   margin-bottom: 64px;
   letter-spacing: -1px;
-  opacity: 0;
-  transform: translateY(16px);
   transition: opacity 0.6s ease, transform 0.6s ease;
   position: relative;
   width: 100%;
+}
+
+.js .section-title {
+  opacity: 0;
+  transform: translateY(16px);
 }
 
 .section-title.visible {
@@ -537,6 +589,9 @@ body {
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.35s ease, background 0.35s ease, box-shadow 0.35s ease;
+}
+
+.js .game-card {
   opacity: 0;
   transform: translateY(28px);
 }
@@ -775,6 +830,9 @@ body {
 
 .feature-card {
   padding: 44px 32px;
+}
+
+.js .feature-card {
   opacity: 0;
   transform: translateY(28px);
 }
@@ -787,8 +845,8 @@ body {
    across "What We Do" and "Built Different" */
 .card-icon,
 .team-icon {
-  width: 72px;
-  height: 72px;
+  width: 92px;
+  height: 92px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -802,36 +860,49 @@ body {
 
 .card-icon {
   margin-bottom: 28px;
+  animation: iconFloat 4s ease-in-out infinite;
 }
 
 .card-icon svg,
 .team-icon svg {
-  width: 34px;
-  height: 34px;
+  width: 44px;
+  height: 44px;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .team-icon svg {
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
 }
 
 .team-icon {
-  width: 52px;
-  height: 52px;
-  border-radius: 14px;
+  width: 68px;
+  height: 68px;
+  border-radius: 16px;
+  animation: iconFloat 4s ease-in-out infinite;
+}
+
+.feature-card:nth-child(2) .card-icon,
+.team-card:nth-child(2) .team-icon {
+  animation-delay: 0.5s;
+}
+
+.feature-card:nth-child(3) .card-icon,
+.team-card:nth-child(3) .team-icon {
+  animation-delay: 1s;
 }
 
 .card:hover .card-icon,
 .card:hover .team-icon {
-  transform: scale(1.08) rotate(-4deg);
-  box-shadow: 0 0 30px rgba(11, 79, 255, 0.25);
-  background: linear-gradient(155deg, rgba(11, 79, 255, 0.24), rgba(11, 79, 255, 0.06));
+  animation-play-state: paused;
+  transform: scale(1.12) rotate(-4deg);
+  box-shadow: 0 0 36px rgba(11, 79, 255, 0.3);
+  background: linear-gradient(155deg, rgba(11, 79, 255, 0.26), rgba(11, 79, 255, 0.07));
 }
 
 .card:hover .card-icon svg,
 .card:hover .team-icon svg {
-  transform: scale(1.08);
+  transform: scale(1.1);
 }
 
 .card-title {
@@ -894,10 +965,13 @@ body {
 
 .team-card {
   padding: 32px;
-  opacity: 0;
-  transform: translateY(28px);
   position: relative;
   overflow: hidden;
+}
+
+.js .team-card {
+  opacity: 0;
+  transform: translateY(28px);
 }
 
 .team-card.visible {
@@ -973,9 +1047,12 @@ body {
   z-index: 1;
   max-width: 700px;
   margin: 0 auto;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.js .cta-content {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .cta-content.visible {
@@ -1197,6 +1274,11 @@ body {
 
 @keyframes drawChartMain {
   to { stroke-dashoffset: 0; }
+}
+
+@keyframes arrowPulse {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 6px rgba(37, 99, 255, 0.4)); }
+  50% { transform: scale(1.15); filter: drop-shadow(0 0 16px rgba(37, 99, 255, 0.8)); }
 }
 
 @keyframes breathe {
