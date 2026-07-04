@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
   <nav class="navbar">
@@ -97,18 +98,35 @@
     </section>
 
     <section class="stats" id="stats">
-      <div class="stats-grid">
-        <div class="stat-card">
-          <span class="stat-number" data-target="0">0</span>
-          <span class="stat-label">CCU</span>
+      <div class="section-container">
+        <div class="growth-chart">
+          <svg class="growth-chart-svg" viewBox="0 0 400 90" fill="none" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+            <polyline
+              class="growth-chart-line"
+              points="0,80 55,62 110,70 165,42 220,50 275,20 330,28 375,6"
+              stroke="#0B4FFF"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              fill="none"
+            />
+            <polygon class="growth-chart-arrow" points="375,6 353,17 364,29" fill="#0B4FFF" />
+          </svg>
+          <span class="growth-chart-label">Trending up, every week</span>
         </div>
-        <div class="stat-card">
-          <span class="stat-number" data-target="0">0</span>
-          <span class="stat-label">Visits</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number" data-target="0">0</span>
-          <span class="stat-label">Games</span>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-number" data-target="0">0</span>
+            <span class="stat-label">CCU</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="0">0</span>
+            <span class="stat-label">Visits</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="0">0</span>
+            <span class="stat-label">Games</span>
+          </div>
         </div>
       </div>
     </section>
