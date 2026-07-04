@@ -106,7 +106,7 @@ const initScrollReveal = () => {
   )
 
   document
-    .querySelectorAll('.stat-card, .feature-card, .team-card, .section-title, .cta-content, .game-card')
+    .querySelectorAll('.stat-card, .feature-card, .team-card, .section-title, .cta-content, .game-card, .growth-chart')
     .forEach((el) => observer.observe(el))
 }
 
