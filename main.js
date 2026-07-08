@@ -439,7 +439,6 @@ const initFloatingElements = () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   addRippleStyle()
-  initParticles()
   initScrollReveal()
   initNavbarScroll()
   initSmoothScroll()
