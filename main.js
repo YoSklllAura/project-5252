@@ -1,5 +1,3 @@
-import './style.css'
-
 const initScrollReveal = () => {
   const observer = new IntersectionObserver(
     (entries) => {
