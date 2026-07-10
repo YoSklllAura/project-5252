@@ -134,7 +134,7 @@ body {
   text-align: center;
   padding: 120px 24px 80px;
   overflow: hidden;
-  background: #000000 url('/image copy copy copy copy copy.png') center center / cover no-repeat;
+  background: #000000 url('./src/assets/hero-bg.png') center center / cover no-repeat;
 }
 
 .hero::before {
