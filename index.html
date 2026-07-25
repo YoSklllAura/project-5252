@@ -34,7 +34,6 @@
     <section class="hero">
       <div class="hero-bg-particles" id="particles"></div>
 
-      <!-- Full-width rising chart behind everything -->
       <div class="hero-chart-bg" aria-hidden="true">
         <svg class="hero-chart-svg" viewBox="0 0 1200 480" fill="none" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -59,7 +58,6 @@
               </feMerge>
             </filter>
           </defs>
-          <!-- Main zigzag stock line -->
           <polyline
             class="chart-main-line"
             points="0,440 180,370 340,410 500,270 660,310 820,180 980,220 1100,90 1160,50"
@@ -70,7 +68,6 @@
             fill="none"
             filter="url(#chartGlow)"
           />
-          <!-- Arrowhead at top right -->
           <polygon
             class="chart-main-arrowhead"
             points="1160,50 1118,74 1136,96"
@@ -108,7 +105,7 @@
           <span class="stat-label">CCU</span>
         </div>
         <div class="stat-card">
-          <span class="stat-number" data-target="3M+">0</span>
+          <span class="stat-number" data-target="3500000" data-suffix="+" data-format="3.5M">0</span>
           <span class="stat-label">Visits</span>
         </div>
         <div class="stat-card">
@@ -161,7 +158,17 @@
               </div>
             </div>
           </div>
-          <div class="game-info">
+          <div class="game-card">
+            <div class="game-image">
+              <div class="game-image-placeholder">
+                <span class="game-image-text">?</span>
+              </div>
+              <div class="game-badge">
+                <span class="game-badge-dot"></span>
+                <span class="game-badge-text">0 playing</span>
+              </div>
+            </div>
+            <div class="game-info">
               <div class="game-header">
                 <div class="game-icon">
                   <span>?</span>
@@ -185,9 +192,6 @@
                   </svg>
                   <span>0</span>
                 </div>
-              </div>
-            </div>
-          </div>
               </div>
             </div>
           </div>
